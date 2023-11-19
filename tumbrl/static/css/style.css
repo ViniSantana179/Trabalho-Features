@@ -1,0 +1,268 @@
+body {
+  background-color: #ddd;
+}
+
+/* =============== PROFILES ==============*/
+
+nav {
+  background-color: #333; /* Cor de fundo da navegação */
+}
+
+.nav-container {
+  max-width: 1200px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none; /* Remover marcadores de lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none; /* Remover sublinhado padrão nos links */
+  color: white !important; /* Cor do texto nos links */
+  font-weight: bold;
+}
+
+a:hover {
+  color: #333 !important;
+  background-color: white;
+}
+
+/* Estilo para a seção principal (main) */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribuir os cartões uniformemente */
+  margin-top: 20px;
+}
+
+.card {
+  margin: 15px;
+  width: 25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* =============== PROFILE ==============*/
+
+#main-heading {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.ul-links {
+  background-color: #333;
+  padding: 10px;
+}
+
+#home-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin: 0px 20px;
+}
+
+#home-link:hover {
+  text-decoration: underline;
+}
+
+#profile-heading {
+  color: #333;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#post-form {
+  margin-top: 20px;
+}
+
+#post-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+#post-form input,
+#post-form button {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#post-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#post-form button:hover {
+  background-color: #0056b3;
+}
+
+#user-posts img.img-thumbnail {
+  width: 150px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#user-posts p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* =============== LOGIN ==============*/
+
+.body-new {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(45deg, rgb(121, 120, 120), rgb(223, 223, 223));
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 80%;
+}
+
+#form-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form label {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+#login-form input,
+#login-form button {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#login-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* =============== NEW ==============*/
+
+.body-new {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(45deg, rgb(78, 78, 78), rgb(223, 223, 223));
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+#form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-container label {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+#form-container input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#form-container button {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#form-container button:hover {
+  background-color: #0056b3;
+}

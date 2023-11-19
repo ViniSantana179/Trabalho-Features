@@ -1,0 +1,23 @@
+{% extends "perry.html" %} {% block body %}
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <a id="home-link" href="{{ url_for('homepage') }}">LOGIN</a>
+      <a id="home-link" href="{{ url_for('createAccount') }}">CADASTRAR</a>
+      <a id="home-link" href="{{ url_for('profiles') }}">PROFILES</a>
+      </ul>
+    </div>
+  </nav>
+  <div id="form-container">
+    <h1>Cadastrar</h1>
+    <form id="my-form" method="POST">
+      {{ form.csrf_token }} {{ form.email.label() }} {{ form.email() }} {{
+      form.usarname.label() }} {{ form.usarname() }} {{ form.password.label() }}
+      {{ form.password() }} {{ form.checkPassword.label() }} {{
+      form.checkPassword() }} {{ form.btn() }}
+    </form>
+  </div>
+</body>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "perry.html" %} {% block titulo %}
+<h2>Teste</h2>
+{% endblock %} {% block body %}
+
+<nav>
+  <div class="nav-container">
+    <ul>
+      <a id="home-link" href="{{ url_for('homepage') }}">LOGIN</a>
+      <a id="home-link" href="{{ url_for('createAccount') }}">CADASTRAR</a>
+      <a id="home-link" href="{{ url_for('profiles') }}">PROFILES</a>
+    </ul>
+  </div>
+</nav>
+{% for user in Users: %}
+<main>
+  <div class="container">
+    <h1>{{ user.username }}</h1>
+    {% for post in user.posts %}
+    <div class="card" style="width: 25rem">
+      <img
+        class="img-thumbnail rounded"
+        src="{{ url_for('static', filename='fotos_dos_posts/{}'.format(post.post_img)) }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p>{{post.post_text}}</p>
+        <a href="/profile/{{user.id}}" class="btn btn-primary"
+          >Visitar Perfil</a
+        >
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+{% endfor %} {% endblock %}
